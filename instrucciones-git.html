@@ -1,11 +1,12 @@
----- INICIALIZACI”N ----
+---- INICIALIZACI√ìN ----
 git init
 git add .    //Si ingreso un punto, selecciona todo, sino poner nombre de carpeta
 git commit -m 'Nombre'
 git remote
 git remote origin main
-git push    // Si hice alguna modificaciÛn, tomar· los datos desde el pc.
-git pull      // Si hice alguna modificaciÛn, tomar· los datos desde github.
+git push    // Si hice alguna modificaci√≥n, tomar√° los datos desde el pc.
+git pull      // Si hice alguna modificaci√≥n, tomar√° los datos desde github.
+
 
 ----- EDITOR VIM ----
 Permite modificar los comentarios que ya se hayan realizado
@@ -15,7 +16,7 @@ git commit --amend
 :wq
 
 ----- TAG ----
-Permite generar un antecedente de versiÛn de programa.
+Permite generar un antecedente de versi√≥n de programa.
 git tag [fecha] -m 'nombre'
 git log --oneline         // [q para salir y h para ayuda]
 git push --tag
@@ -26,5 +27,8 @@ git clone
 
 ----- RAMAS O BRANCH ----
 Son varias personas que acceden a parte del mismo.
-Varias personas acceden a una suerte de copia con el propÛsito de hacer pruebas.
+Varias personas acceden a una suerte de copia con el prop√≥sito de hacer pruebas.
 
+git branch nombreElegido 
+git branch    //Me muestra la lista de ramas, el asterisco indica d√≥nde estoy
+git checkout nombreElegido   // Me muevo a la rama donde voy a trabajar
