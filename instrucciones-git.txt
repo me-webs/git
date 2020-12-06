@@ -1,0 +1,30 @@
+---- INICIALIZACIÓN ----
+git init
+git add .    //Si ingreso un punto, selecciona todo, sino poner nombre de carpeta
+git commit -m 'Nombre'
+git remote
+git remote origin main
+git push    // Si hice alguna modificación, tomará los datos desde el pc.
+git pull      // Si hice alguna modificación, tomará los datos desde github.
+
+----- EDITOR VIM ----
+Permite modificar los comentarios que ya se hayan realizado
+
+git commit --amend   
+:i
+:wq
+
+----- TAG ----
+Permite generar un antecedente de versión de programa.
+git tag [fecha] -m 'nombre'
+git log --oneline         // [q para salir y h para ayuda]
+git push --tag
+
+----- CLONAR ----
+Baja el archivo desde el repositorio remoto.
+git clone 
+
+----- RAMAS O BRANCH ----
+Son varias personas que acceden a parte del mismo.
+Varias personas acceden a una suerte de copia con el propósito de hacer pruebas.
+
