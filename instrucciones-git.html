@@ -24,6 +24,11 @@ git remote origin main
 git push    // Si hice alguna modificación, tomará los datos desde el pc.
 git pull      // Si hice alguna modificación, tomará los datos desde github.
 
+---- REINICIALIZACIÓN ----
+rm -rf .git // esto eliminara todo lo relacionado a tu repositorio git
+git init  // inicilizas git en tu proyecto
+git remote add origin  https://gitlab.com/otro_usuario/otro_repositorio.git
+
 
 ----- EDITOR VIM ----
 Permite modificar los comentarios que ya se hayan realizado
@@ -42,12 +47,26 @@ git push --tag
 Baja el archivo desde el repositorio remoto.
 git clone urlDelProyecto
 
+git remote --v // Nos muestra el origen del respoitorio. Fetch es traer cambios nuevos. Si nosotros realizamos cambios o actualizaciones lo podremos subir al origen. 
+
+git fetch // trae todos los cambios
+git pull origin master // trae los cambios de una rama específica.
+
+Clonar y subir proyecto a un respositorio diferente del que se clono:
+git init
+git add . 
+git commit -m 'COMENTARIO'
+git push URL // En url va la url donde quiero que se haga la subida, el nuevo respositorio
+
 ----- FORK ----
 Es como una clonación pero para github, es para utilizar y colaborar con otros proyectos.
 Se utliza para contribuir.
 
 git fork
 git pullRequest // avisarle al programador inicial de los cambios.
+
+git pull URL-DEL-REPO
+git push URL-DEL-REPO
 
 ----- RAMAS O BRANCH ----
 Son varias personas que acceden a parte del mismo.
